@@ -5,16 +5,21 @@ class LikesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Likes', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 10),
-            Text('Hier findest du deine gelikten Nachrichten.'),
-          ],
-        ),
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Likes',
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+          ),
+          SizedBox(height: 12),
+          Text(
+            'Hier findest du deine gelikten\nNachrichten.',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 16),
+          ),
+        ],
       ),
     );
   }
